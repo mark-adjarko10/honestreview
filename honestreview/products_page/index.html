@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HonestReview | All Products</title>
+  <!-- Google Font & Font Awesome (same as landing) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link rel="stylesheet" href="products.css">
+  <link rel="icon" href="/images/logo.JPG" type="images/png">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="/index.html" class="logo">
+        <span class="logo-mark">H</span>
+        <span class="logo-text">Honest<span>Review</span></span>
+      </a>
+
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-button">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/products_page/index.html" class="active">Products</a>
+        <a href="/category/index.html">Categories</a>
+        <a href="/about_page/index.html">About</a>
+        <a href="/auth/index.html" class="login-btn">Login</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/write_review/index.html" class="review-btn">Write a Review</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <section class="page-header">
+    <div class="page-header-container">
+      <h1>All <span>Products</span></h1>
+      <p>Browse honest reviews, ratings and experiences from real people. Find the right product before you buy.</p>
+    </div>
+
+    <!-- Filter / Search bar -->
+    <div class="filter-bar">
+      <div class="search-wrapper">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="productSearch" placeholder="Search products, brands, categories...">
+      </div>
+      <div class="filter-group">
+        <select id="categoryFilter">
+          <option value="all">All categories</option>
+          <option value="household">Household</option>
+          <option value="beauty">Beauty</option>
+          <option value="electronics">Electronics</option>
+          <option value="food">Food</option>
+          <option value="fashion">Fashion</option>
+          <option value="automotive">Automotive</option>
+        </select>
+        <select id="sortFilter">
+          <option value="popular">Most popular</option>
+          <option value="rating">Highest rated</option>
+          <option value="reviews">Most reviews</option>
+        </select>
+        <button class="filter-btn" id="applyFilters">
+          <i class="fa-solid fa-sliders"></i> Apply
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCTS GRID ========== -->
+  <section class="products-section">
+    <div class="products-grid" id="productsGrid">
+      <!-- Product cards will be injected by JavaScript -->
+    </div>
+  </section>
+
+  <!-- ========== FOOTER (consistent with landing) ========== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/index.html" class="logo" style="margin-bottom:18px; display:inline-flex;">
+            <span class="logo-mark">H</span>
+            <span class="logo-text" style="color:#fff;">Honest<span style="color:#166534;">Review</span></span>
+          </a>
+          <p>Real opinions. Real experiences. Better decisions. Discover honest reviews from people who have actually used the products and services they recommend.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#">Popular Reviews</a></li>
+            <li><a href="#">Recently Reviewed</a></li>
+            <li><a href="/category/index.html">Categories</a></li>
+            <li><a href="/write_review/index.html">Write a Review</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="/products_page/index.html">Electronics</a></li>
+            <li><a href="/products_page/index.html">Fashion</a></li>
+            <li><a href="/products_page/index.html">Beauty &amp; Care</a></li>
+            <li><a href="/products_page/index.html">Food &amp; Restaurants</a></li>
+            <li><a href="/products_page/index.html">Home &amp; Living</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>HonestReview</h3>
+          <ul>
+            <li><a href="/about_page/index.html">About Us</a></li>
+            <li><a href="/about_page/index.html">How It Works</a></li>
+            <li><a href="#">Community Guidelines</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Stay in the know</h3>
+          <p>Get useful reviews, product insights, and community updates delivered to your inbox.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" aria-label="Email address">
+            <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 HonestReview.com. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script src="products.js"></script>
+</body>
+</html>

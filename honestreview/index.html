@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HonestReview | Know Before You Buy</title>
+    <link rel="icon" href="images/logo.JPG" type="images/png">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <span class="logo-mark">H</span>
+            <span class="logo-text">Honest<span>Review</span></span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+
+        <!-- Navigation Links -->
+        <nav class="nav-links">
+            <a href="/index.html" class="active">Home</a>
+            <a href="/products_page/index.html">Products</a>
+            <a href="/category/index.html">Categories</a>
+            <a href="/about_page/index.html">About</a>
+            <a href="/auth/index.html" class="login-btn">Login</a>
+        </nav>
+
+
+        <!-- Navigation Actions -->
+        <div class="nav-actions">
+            <a href="/write_review/index.html" class="review-btn">
+                Write a Review
+            </a>
+        </div>
+    </div>
+</header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <main>
+
+        <section class="hero">
+
+            <!-- Hero Background Image -->
+            <div class="hero-image"></div>
+
+            <!-- Dark overlay -->
+            <div class="hero-overlay"></div>
+
+            <!-- Hero Content -->
+            <div class="hero-container">
+
+                <div class="hero-content">
+
+                    <h1>
+                        Know Before
+                        <span>You Buy.</span>
+                    </h1>
+
+                    <p>
+                        Discover what real people think about the products
+                        they use. Read honest experiences, compare products,
+                        and make better purchasing decisions.
+                    </p>
+
+                    <!-- Search -->
+                    <form class="search-box">
+                        <input
+                            type="text"
+                            placeholder="Search for a product or brand..."
+                            aria-label="Search for a product or brand"
+                        >
+                        <button type="submit">
+                            Search
+                        </button>
+
+                    </form>
+
+                    <!-- Quick statistics -->
+                    <div class="hero-stats">
+
+                        <div class="stat">
+                            <strong>1,000+</strong>
+                            <span>Products</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>5,000+</strong>
+                            <span>Reviews</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>100%</strong>
+                            <span>Real Experiences</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =========================================
+     POPULAR PRODUCTS SECTION
+========================================= -->
+
+<section class="popular-products">
+
+    <div class="section-container">
+
+        <!-- Section Header -->
+        <div class="section-header">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    <i class="fa-solid fa-fire"></i>
+                    Trending Now
+                </span>
+
+                <h2>
+                    Popular Products
+                </h2>
+
+                <p>
+                    See what people are talking about and discover
+                    products that are getting attention from real users.
+                </p>
+
+            </div>
+
+            <a href="/products_page/index.html" class="view-all-btn">
+                View All Products
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <!-- Product Grid -->
+        <div class="products-grid">
+
+
+            <!-- PRODUCT 1 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="/images/madar.webp"
+                        alt="Washing powder product"
+                    >
+
+                    <span class="product-category">
+                        Household
+                    </span>
+
+                    <button class="bookmark-btn"
+                            aria-label="Save product">
+
+                        <i class="fa-regular fa-bookmark"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <span class="product-brand">
+                        Cleaning Products
+                    </span>
+
+                    <h3>
+                        Madar Washing Powder
+                    </h3>
+
+
+                    <div class="rating-row">
+
+                        <div class="stars">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+
+                        </div>
+
+                        <strong>4.5</strong>
+
+                        <span>
+                            (328 reviews)
+                        </span>
+
+                    </div>
+
+
+                    <p class="product-description">
+                        A popular household detergent reviewed for
+                        cleaning performance, fragrance and value.
+                    </p>
+
+
+                    <div class="product-footer">
+
+                        <div class="recommendation">
+
+                            <i class="fa-solid fa-thumbs-up"></i>
+
+                            <span>
+                                <strong>89%</strong> recommend
+                            </span>
+
+                        </div>
+
+                        <a href="#" class="product-link">
+                            View Reviews
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 2 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="/images/nivea.jpg"
+                        alt="Body lotion product"
+                    >
+
+                    <span class="product-category">
+                        Beauty
+                    </span>
+
+                    <button class="bookmark-btn"
+                            aria-label="Save product">
+
+                        <i class="fa-regular fa-bookmark"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <span class="product-brand">
+                        Personal Care
+                    </span>
+
+                    <h3>
+                        Nivea Body Lotion
+                    </h3>
+
+
+                    <div class="rating-row">
+
+                        <div class="stars">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+
+                        </div>
+
+                        <strong>4.1</strong>
+
+                        <span>
+                            (214 reviews)
+                        </span>
+
+                    </div>
+
+
+                    <p class="product-description">
+                        Users share their experiences with moisture,
+                        fragrance, texture and long-term results.
+                    </p>
+
+
+                    <div class="product-footer">
+
+                        <div class="recommendation">
+
+                            <i class="fa-solid fa-thumbs-up"></i>
+
+                            <span>
+                                <strong>82%</strong> recommend
+                            </span>
+
+                        </div>
+
+                        <a href="#" class="product-link">
+                            View Reviews
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 3 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="/images/pixel 10  pro xl.jpg"
+                        alt="Smartphone product"
+                    >
+
+                    <span class="product-category">
+                        Electronics
+                    </span>
+
+                    <button class="bookmark-btn"
+                            aria-label="Save product">
+
+                        <i class="fa-regular fa-bookmark"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <span class="product-brand">
+                        Mobile Technology
+                    </span>
+
+                    <h3>
+                        Google Pixel 10 Pro XL
+                    </h3>
+
+
+                    <div class="rating-row">
+
+                        <div class="stars">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+
+                        <strong>4.8</strong>
+
+                        <span>
+                            (741 reviews)
+                        </span>
+
+                    </div>
+
+
+                    <p class="product-description">
+                        Reviews covering performance, battery life,
+                        camera quality and overall value.
+                    </p>
+
+
+                    <div class="product-footer">
+
+                        <div class="recommendation">
+
+                            <i class="fa-solid fa-thumbs-up"></i>
+
+                            <span>
+                                <strong>94%</strong> recommend
+                            </span>
+
+                        </div>
+
+                        <a href="#" class="product-link">
+                            View Reviews
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 4 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="/images/fortune sunflower oil.jpg"
+                        alt="Cooking oil product"
+                    >
+
+                    <span class="product-category">
+                        Food
+                    </span>
+
+                    <button class="bookmark-btn"
+                            aria-label="Save product">
+
+                        <i class="fa-regular fa-bookmark"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <span class="product-brand">
+                        Food & Beverage
+                    </span>
+
+                    <h3>
+                        Fortune Sunflower Oil
+                    </h3>
+
+
+                    <div class="rating-row">
+
+                        <div class="stars">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+
+                        </div>
+
+                        <strong>3.8</strong>
+
+                        <span>
+                            (186 reviews)
+                        </span>
+
+                    </div>
+
+
+                    <p class="product-description">
+                        Consumers rate taste, cooking performance,
+                        packaging and overall value for money.
+                    </p>
+
+
+                    <div class="product-footer">
+
+                        <div class="recommendation">
+
+                            <i class="fa-solid fa-thumbs-up"></i>
+
+                            <span>
+                                <strong>76%</strong> recommend
+                            </span>
+
+                        </div>
+
+                        <a href="#" class="product-link">
+                            View Reviews
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+                        <!-- PRODUCT 4 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="/images/vaseline lip balm.jpg"
+                        alt="Vaseline lip balm product"
+                    >
+
+                    <span class="product-category">
+                        Beauty
+                    </span>
+
+                    <button class="bookmark-btn"
+                            aria-label="Save product">
+
+                        <i class="fa-regular fa-bookmark"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <span class="product-brand">
+                        Personal Care
+                    </span>
+
+                    <h3>
+                        Vaseline lip balm
+                    </h3>
+
+
+                    <div class="rating-row">
+
+                        <div class="stars">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+
+                        </div>
+
+                        <strong>3.8</strong>
+
+                        <span>
+                            (186 reviews)
+                        </span>
+
+                    </div>
+
+
+                    <p class="product-description">
+                        Consumers rate taste, cooking performance,
+                        packaging and overall value for money.
+                    </p>
+
+
+                    <div class="product-footer">
+
+                        <div class="recommendation">
+
+                            <i class="fa-solid fa-thumbs-up"></i>
+
+                            <span>
+                                <strong>76%</strong> recommend
+                            </span>
+
+                        </div>
+
+                        <a href="#" class="product-link">
+                            View Reviews
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     EXPLORE CATEGORIES SECTION
+========================================= -->
+
+<section class="categories-section">
+
+    <div class="section-container">
+
+        <!-- Section Header -->
+        <div class="categories-header">
+
+            <div class="categories-heading">
+
+                <span class="section-label">
+                    <i class="fa-solid fa-layer-group"></i>
+                    Explore
+                </span>
+
+                <h2>
+                    Explore Categories
+                </h2>
+
+                <p>
+                    Find honest opinions about the products you use
+                    every day, all in one place.
+                </p>
+
+            </div>
+
+            <a href="/category/index.html" class="categories-view-all">
+                Browse All Categories
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <!-- Categories Grid -->
+        <div class="categories-grid">
+
+
+            <!-- Household -->
+            <a href="/category/index.html"
+               class="category-card">
+
+                <div class="category-icon household-icon">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+
+                <div class="category-info">
+
+                    <h3>
+                        Household
+                    </h3>
+
+                    <p>
+                        Cleaning, laundry & home products
+                    </p>
+
+                    <span class="category-count">
+                        1 product
+                    </span>
+
+                </div>
+
+                <div class="category-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </a>
+
+
+            <!-- Beauty -->
+            <a href="/category/index.html"
+               class="category-card">
+
+                <div class="category-icon beauty-icon">
+                    <i class="fa-solid fa-spa"></i>
+                </div>
+
+                <div class="category-info">
+
+                    <h3>
+                        Beauty & Care
+                    </h3>
+
+                    <p>
+                        Skincare, haircare & cosmetics
+                    </p>
+
+                    <span class="category-count">
+                        1 product
+                    </span>
+
+                </div>
+
+                <div class="category-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </a>
+
+
+            <!-- Electronics -->
+            <a href="/category/index.html"
+               class="category-card">
+
+                <div class="category-icon electronics-icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+
+                <div class="category-info">
+
+                    <h3>
+                        Electronics
+                    </h3>
+
+                    <p>
+                        Phones, laptops & accessories
+                    </p>
+
+                    <span class="category-count">
+                        1 product
+                    </span>
+
+                </div>
+
+                <div class="category-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </a>
+
+
+            <!-- Food -->
+            <a href="/category/index.html"
+               class="category-card">
+
+                <div class="category-icon food-icon">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+
+                <div class="category-info">
+
+                    <h3>
+                        Food & Beverage
+                    </h3>
+
+                    <p>
+                        Food, drinks & packaged products
+                    </p>
+
+                    <span class="category-count">
+                        1 product
+                    </span>
+
+                </div>
+
+                <div class="category-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </a>
+
+
+            <!-- Fashion -->
+            <a href="/category/index.html"
+               class="category-card">
+
+                <div class="category-icon fashion-icon">
+                    <i class="fa-solid fa-shirt"></i>
+                </div>
+
+                <div class="category-info">
+
+                    <h3>
+                        Fashion
+                    </h3>
+
+                    <p>
+                        Clothing, shoes & accessories
+                    </p>
+
+                    <span class="category-count">
+                        1 product
+                    </span>
+
+                </div>
+
+                <div class="category-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </a>
+
+
+            <!-- Automotive -->
+            <a href="/category/index.html"
+               class="category-card">
+
+                <div class="category-icon automotive-icon">
+                    <i class="fa-solid fa-car"></i>
+                </div>
+
+                <div class="category-info">
+
+                    <h3>
+                        Automotive
+                    </h3>
+
+                    <p>
+                        Cars, oils, tyres & accessories
+                    </p>
+
+                    <span class="category-count">
+                        1 product
+                    </span>
+
+                </div>
+
+                <div class="category-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- Bottom Message -->
+        <div class="category-bottom">
+
+            <div class="category-bottom-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div>
+                <strong>
+                    Can't find what you're looking for?
+                </strong>
+
+                <p>
+                    Search our growing collection of products and brands.
+                </p>
+            </div>
+
+            <a href="/products_page/index.html">
+                Search Products
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     RECENTLY REVIEWED SECTION
+========================================= -->
+
+<section class="recent-reviews">
+
+    <div class="section-container">
+
+        <!-- Section Header -->
+        <div class="recent-header">
+
+            <div class="recent-heading">
+
+                <span class="section-label">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    Fresh Experiences
+                </span>
+
+                <h2>
+                    Recently Reviewed
+                </h2>
+
+                <p>
+                    See what people are saying about products they've
+                    recently used.
+                </p>
+
+            </div>
+
+            <a href="#" class="recent-view-all">
+                View All Reviews
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <!-- Reviews Grid -->
+        <div class="reviews-grid">
+
+
+            <!-- =================================
+                 REVIEW 1
+            ================================== -->
+
+            <article class="review-card">
+
+                <!-- Reviewer -->
+                <div class="review-top">
+
+                    <div class="reviewer">
+
+                        <div class="reviewer-avatar">
+                            KA
+                        </div>
+
+                        <div class="reviewer-info">
+
+                            <h3>
+                                Kwame A.
+                            </h3>
+
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Accra, Ghana
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <span class="review-date">
+                        2 hours ago
+                    </span>
+
+                </div>
+
+
+                <!-- Product -->
+                <div class="review-product">
+
+                    <div class="review-product-image">
+
+                        <img
+                            src="/images/madar.webp"
+                            alt="Washing powder"
+                        >
+
+                    </div>
+
+                    <div>
+
+                        <span class="review-product-category">
+                            Household
+                        </span>
+
+                        <h4>
+                            Madar Washing Powder
+                        </h4>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Rating -->
+                <div class="review-rating">
+
+                    <div class="review-stars">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+
+                    </div>
+
+                    <strong>
+                        4.0
+                    </strong>
+
+                </div>
+
+
+                <!-- Review Text -->
+                <p class="review-text">
+                    "I've been using this for a few weeks now. It does
+                    a good job on everyday clothes and has a pleasant
+                    fragrance."
+                </p>
+
+
+                <!-- Review Bottom -->
+                <div class="review-bottom">
+
+                    <span class="recommend-badge">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        Recommends
+                    </span>
+
+                    <span class="verified-review">
+                        <i class="fa-solid fa-circle-check"></i>
+                        Verified experience
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================
+                 REVIEW 2
+            ================================== -->
+
+            <article class="review-card">
+
+                <div class="review-top">
+
+                    <div class="reviewer">
+
+                        <div class="reviewer-avatar">
+                            AM
+                        </div>
+
+                        <div class="reviewer-info">
+
+                            <h3>
+                                Ama M.
+                            </h3>
+
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Kumasi, Ghana
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <span class="review-date">
+                        5 hours ago
+                    </span>
+
+                </div>
+
+
+                <div class="review-product">
+
+                    <div class="review-product-image">
+
+                        <img
+                            src="/images/nivea.jpg"
+                            alt="Body lotion"
+                        >
+
+                    </div>
+
+                    <div>
+
+                        <span class="review-product-category">
+                            Beauty & Care
+                        </span>
+
+                        <h4>
+                            Nivea Body Lotion
+                        </h4>
+
+                    </div>
+
+                </div>
+
+
+                <div class="review-rating">
+
+                    <div class="review-stars">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+
+                    </div>
+
+                    <strong>
+                        3.0
+                    </strong>
+
+                </div>
+
+
+                <p class="review-text">
+                    "The lotion feels nice when applied, but I expected
+                    the moisturizing effect to last much longer."
+                </p>
+
+
+                <div class="review-bottom">
+
+                    <span class="not-recommend-badge">
+                        <i class="fa-solid fa-thumbs-down"></i>
+                        Not recommended
+                    </span>
+
+                    <span class="verified-review">
+                        <i class="fa-solid fa-circle-check"></i>
+                        Verified experience
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================
+                 REVIEW 3
+            ================================== -->
+
+            <article class="review-card">
+
+                <div class="review-top">
+
+                    <div class="reviewer">
+
+                        <div class="reviewer-avatar">
+                            KO
+                        </div>
+
+                        <div class="reviewer-info">
+
+                            <h3>
+                                Kofi O.
+                            </h3>
+
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Tema, Ghana
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <span class="review-date">
+                        Yesterday
+                    </span>
+
+                </div>
+
+
+                <div class="review-product">
+
+                    <div class="review-product-image">
+
+                        <img
+                            src="/images/pixel 10  pro xl.jpg"
+                            alt="Smartphone"
+                        >
+
+                    </div>
+
+                    <div>
+
+                        <span class="review-product-category">
+                            Electronics
+                        </span>
+
+                        <h4>
+                            Google Pixel 10 Pro XL
+                        </h4>
+
+                    </div>
+
+                </div>
+
+
+                <div class="review-rating">
+
+                    <div class="review-stars">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+
+                    <strong>
+                        5.0
+                    </strong>
+
+                </div>
+
+
+                <p class="review-text">
+                    "Battery life has been excellent so far. The camera
+                    is also better than I expected at this price."
+                </p>
+
+
+                <div class="review-bottom">
+
+                    <span class="recommend-badge">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        Recommends
+                    </span>
+
+                    <span class="verified-review">
+                        <i class="fa-solid fa-circle-check"></i>
+                        Verified experience
+                    </span>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     WRITE A REVIEW CTA
+========================= -->
+<section class="review-cta">
+    <div class="cta-container">
+
+        <div class="cta-content">
+
+            <div class="cta-icon">
+                <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+
+            <span class="cta-label">
+                Your experience matters
+            </span>
+
+            <h2>
+                Used a product recently?
+                <span>Tell us what you think.</span>
+            </h2>
+
+            <p>
+                Your honest experience could help someone make
+                a better decision. Share what worked, what didn't,
+                and what you really think.
+            </p>
+
+            <a href="/write_review/index.html" class="cta-button">
+                Write a Review
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <div class="cta-note">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Honest experiences. Better decisions.</span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <!-- Footer Top -->
+        <div class="footer-top">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+                     <a href="/index.html" class="logo">
+            <span class="logo-mark">H</span>
+            <span class="logo-text"></span>
+        </a>
+
+                <p>
+                    Real opinions. Real experiences. Better decisions.
+                    Discover honest reviews from people who have actually
+                    used the products and services they recommend.
+                </p>
+
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3>Explore</h3>
+
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/products_page/index.html">Popular Reviews</a></li>
+                    <li><a href="/products_page/index.html">Recently Reviewed</a></li>
+                    <li><a href="/category/index.html">Categories</a></li>
+                    <li><a href="/write_review/index.html">Write a Review</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Categories -->
+            <div class="footer-column">
+                <h3>Categories</h3>
+
+                <ul>
+                    <li><a href="/category/index.html">Electronics</a></li>
+                    <li><a href="/category/index.html">Fashion</a></li>
+                    <li><a href="/category/index.html">Beauty & Care</a></li>
+                    <li><a href="/category/index.html">Food & Restaurants</a></li>
+                    <li><a href="/category/index.html">Home & Living</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Company -->
+            <div class="footer-column">
+                <h3>HonestReview</h3>
+
+                <ul>
+                    <li><a href="/about_page/index.html">About Us</a></li>
+                    <li><a href="/about_page/index.html">How It Works</a></li>
+                    <li><a href="/about_page/index.html">Community Guidelines</a></li>
+                    <li><a href="/about_page/index.html">Contact Us</a></li>
+                    <li><a href="/about_page/index.html">Help Center</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Newsletter -->
+            <div class="footer-newsletter">
+                <h3>Stay in the know</h3>
+
+                <p>
+                    Get useful reviews, product insights, and community
+                    updates delivered to your inbox.
+                </p>
+
+                <form class="newsletter-form">
+                    <input
+                        type="email"
+                        placeholder="Your email address"
+                        aria-label="Email address"
+                    >
+
+                    <button type="submit">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 HonestReview.com. All rights reserved.
+            </p>
+
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>

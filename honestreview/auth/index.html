@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | HonestReview</title>
+    <link rel="icon" href="images/Capture.JPG" type="images/png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/logo.JPG" type="images/png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="login_register.css">
+</head>
+
+<body>
+    
+<!--AUTH SECTION-->
+<main class="auth-section">
+
+    <!-- Left: Brand panel -->
+    <aside class="auth-brand">
+
+        <div class="brand-content">
+
+            <h1>
+                Real opinions.<br>
+                <span>Real experiences.</span>
+            </h1>
+
+            <p>
+                Join thousands of people sharing honest reviews about the
+                products they actually use. No sponsored fluff — just real
+                experiences that help others decide.
+            </p>
+
+            <ul class="brand-points">
+                <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Write reviews for products you've used</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Track and manage your reviews in your dashboard</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Help others make smarter buying decisions</span>
+                </li>
+            </ul>
+
+            <div class="brand-quote">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                    I check HonestReview before buying anything now.
+                    Real reviews from real people — it's a game changer.
+                </p>
+                <div class="quote-author">
+                    <div class="quote-avatar">AM</div>
+                    <div>
+                        <strong>Ama M.</strong>
+                        <span>Kumasi, Ghana</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Right: Auth card -->
+    <section class="auth-card-wrap">
+
+        <div class="auth-card" id="authCard">
+
+            <!-- -----------------------------------
+                 LOGIN FORM
+            ----------------------------------- -->
+            <div class="auth-form active" id="loginForm">
+
+                <div class="auth-header">
+                    <h2>Welcome back</h2>
+                    <p>Sign in to continue sharing your honest reviews.</p>
+                </div>
+
+                <!-- Social login (optional) -->
+                <div class="social-row">
+                    <button type="button" class="social-btn">
+                        <i class="fa-brands fa-google"></i>
+                        <span>Google</span>
+                    </button>
+                    <button type="button" class="social-btn">
+                        <i class="fa-brands fa-apple"></i>
+                        <span>Apple</span>
+                    </button>
+                </div>
+
+                <div class="divider">
+                    <span>or sign in with email</span>
+                </div>
+
+                <form class="auth-form-fields" novalidate>
+
+                    <div class="field">
+                        <label for="login-email">Email address</label>
+                        <div class="field-input">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input
+                                type="email"
+                                id="login-email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="login-password">Password</label>
+                        <div class="field-input">
+                            <i class="fa-solid fa-lock"></i>
+                            <input
+                                type="password"
+                                id="login-password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+                            <button type="button" class="toggle-pw" data-target="login-password" aria-label="Show password">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-link">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="auth-submit">
+                        Sign In
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </form>
+
+                <p class="switch-text">
+                    Don't have an account?
+                    <button type="button" class="switch-link" data-switch="register">
+                        Create one
+                    </button>
+                </p>
+
+            </div>
+
+
+            <!-- -----------------------------------
+                 REGISTER FORM
+            ----------------------------------- -->
+            <div class="auth-form" id="registerForm">
+
+                <div class="auth-header">
+                    <h2>Create your account</h2>
+                    <p>Join HonestReview and start sharing honest experiences.</p>
+                </div>
+
+                <div class="social-row">
+                    <button type="button" class="social-btn">
+                        <i class="fa-brands fa-google"></i>
+                        <span>Google</span>
+                    </button>
+                    <button type="button" class="social-btn">
+                        <i class="fa-brands fa-apple"></i>
+                        <span>Apple</span>
+                    </button>
+                </div>
+
+                <div class="divider">
+                    <span>or sign up with email</span>
+                </div>
+
+                <form class="auth-form-fields" novalidate>
+
+                    <div class="field">
+                        <label for="reg-name">Full name</label>
+                        <div class="field-input">
+                            <i class="fa-regular fa-user"></i>
+                            <input
+                                type="text"
+                                id="reg-name"
+                                placeholder="Your full name"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="reg-email">Email address</label>
+                        <div class="field-input">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input
+                                type="email"
+                                id="reg-email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="reg-password">Password</label>
+                        <div class="field-input">
+                            <i class="fa-solid fa-lock"></i>
+                            <input
+                                type="password"
+                                id="reg-password"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                                required
+                            >
+                            <button type="button" class="toggle-pw" data-target="reg-password" aria-label="Show password">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="pw-strength" id="pwStrength">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <small class="pw-hint" id="pwHint">Use at least 8 characters</small>
+                    </div>
+
+                    <label class="checkbox terms">
+                        <input type="checkbox" required>
+                        <span>
+                            I agree to the
+                            <a href="#">Terms of Service</a>
+                            and
+                            <a href="#">Privacy Policy</a>
+                        </span>
+                    </label>
+
+                    <button type="submit" class="auth-submit">
+                        Create Account
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </form>
+
+                <p class="switch-text">
+                    Already have an account?
+                    <button type="button" class="switch-link" data-switch="login">
+                        Sign in
+                    </button>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================================
+     JS — Toggle + password visibility + strength
+========================================= -->
+<script>
+(function () {
+    const loginForm    = document.getElementById('loginForm');
+    const registerForm = document.getElementById('registerForm');
+    const card         = document.getElementById('authCard');
+
+    // ---------- SWITCH BETWEEN LOGIN / REGISTER ----------
+    document.querySelectorAll('[data-switch]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const target = btn.getAttribute('data-switch');
+            if (target === 'register') {
+                loginForm.classList.remove('active');
+                registerForm.classList.add('active');
+            } else {
+                registerForm.classList.remove('active');
+                loginForm.classList.add('active');
+            }
+            // Scroll card into view on mobile
+            if (window.innerWidth < 900) {
+                card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // ---------- PASSWORD VISIBILITY TOGGLE ----------
+    document.querySelectorAll('.toggle-pw').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const input = document.getElementById(btn.getAttribute('data-target'));
+            if (!input) return;
+            const icon = btn.querySelector('i');
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.remove('fa-regular', 'fa-eye');
+                icon.classList.add('fa-regular', 'fa-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.remove('fa-regular', 'fa-eye-slash');
+                icon.classList.add('fa-regular', 'fa-eye');
+            }
+        });
+    });
+
+    // PASSWORD STRENGTH METER 
+    const pwInput = document.getElementById('reg-password');
+    const strengthBars = document.querySelectorAll('#pwStrength .bar');
+    const pwHint = document.getElementById('pwHint');
+
+    function calcStrength(pw) {
+        let score = 0;
+        if (!pw) return 0;
+        if (pw.length >= 8) score++;
+        if (/[A-Z]/.test(pw)) score++;
+        if (/[0-9]/.test(pw)) score++;
+        if (/[^A-Za-z0-9]/.test(pw)) score++;
+        return score;
+    }
+
+    if (pwInput) {
+        pwInput.addEventListener('input', () => {
+            const score = calcStrength(pwInput.value);
+            strengthBars.forEach((bar, i) => {
+                bar.classList.remove('weak', 'fair', 'good', 'strong');
+                if (i < score) {
+                    if (score === 1) bar.classList.add('weak');
+                    else if (score === 2) bar.classList.add('fair');
+                    else if (score === 3) bar.classList.add('good');
+                    else if (score === 4) bar.classList.add('strong');
+                }
+            });
+
+            if (!pwInput.value) {
+                pwHint.textContent = 'Use at least 8 characters';
+                pwHint.style.color = '#89928d';
+            } else if (score === 1) {
+                pwHint.textContent = 'Weak — add uppercase, numbers or symbols';
+                pwHint.style.color = '#dc2626';
+            } else if (score === 2) {
+                pwHint.textContent = 'Fair — could be stronger';
+                pwHint.style.color = '#d97706';
+            } else if (score === 3) {
+                pwHint.textContent = 'Good password';
+                pwHint.style.color = '#166534';
+            } else {
+                pwHint.textContent = 'Strong password';
+                pwHint.style.color = '#166534';
+            }
+        });
+    }
+})();
+</script>
+
+</body>
+</html>

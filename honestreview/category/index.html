@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories | HonestReview</title>
+    <link rel="icon" href="images/Capture.JPG" type="images/png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/logo.JPG" type="images/png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+          <link rel="stylesheet" href="category.css">
+</head>
+    
+<body>
+
+<!-- ========== NAVIGATION ========== -->
+<header class="navbar">
+    <div class="nav-container">
+
+        <a href="/index.html" class="logo">
+            <span class="logo-mark">H</span>
+            <span class="logo-text">Honest<span>Review</span></span>
+        </a>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-button">
+            <span></span><span></span><span></span>
+        </label>
+
+        <nav class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/products_page/index.html">Products</a>
+            <a href="/category/index.html" class="active">Categories</a>
+            <a href="/about_page/index.html">About</a>
+            <a href="/auth/index.html" class="login-btn">Login</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="/write_review/index.html" class="review-btn">Write a Review</a>
+        </div>
+
+    </div>
+</header>
+
+
+<!-- ========== PAGE HEADER ========== -->
+<section class="page-header">
+    <div class="page-header-container">
+
+        <span class="page-label">
+            <i class="fa-solid fa-layer-group"></i>
+            Explore
+        </span>
+
+        <h1>Browse by <span>Category</span></h1>
+
+        <p>
+            Find honest opinions about the products you use every day.
+            Every review comes from someone who actually used the product —
+            no sponsored fluff, just real experiences.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- ========== TRUST STRIP ========== -->
+<div class="trust-strip">
+    <div class="trust-item">
+        <i class="fa-solid fa-shield-halved"></i>
+        <div>
+            <strong>Verified experiences</strong>
+            <span>Reviews from real users only</span>
+        </div>
+    </div>
+    <div class="trust-item">
+        <i class="fa-solid fa-list-check"></i>
+        <div>
+            <strong>6 focused categories</strong>
+            <span>Quality over quantity</span>
+        </div>
+    </div>
+    <div class="trust-item">
+        <i class="fa-solid fa-comments"></i>
+        <div>
+            <strong>Thousands of reviews</strong>
+            <span>Growing every day</span>
+        </div>
+    </div>
+</div>
+
+
+<!-- ========== CATEGORIES ========== -->
+<section class="categories-section">
+    <div class="section-container">
+
+        <!-- Section header -->
+        <div class="section-header">
+            <div class="section-heading">
+                <span class="section-label">
+                    <i class="fa-solid fa-compass"></i>
+                    All Categories
+                </span>
+                <h2>Pick a category to explore</h2>
+                <p>
+                    We keep things simple — six categories that cover the
+                    products people actually review. Tap any category to
+                    dive into honest feedback.
+                </p>
+            </div>
+
+            <span class="section-count">
+                6 categories · 8 products
+            </span>
+        </div>
+
+
+        <!-- Categories grid -->
+        <div class="categories-grid">
+
+            <!-- HOUSEHOLD -->
+            <a href="/products_page/index.html" class="category-card">
+                <div class="category-icon cat-household">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+
+                <h3>Household</h3>
+
+                <p>
+                    Cleaning, laundry and everyday home essentials —
+                    reviewed for performance and value.
+                </p>
+
+                <ul class="subcategory-list">
+                    <li>Washing powder</li>
+                    <li>Detergents</li>
+                    <li>Dishwashing liquid</li>
+                    <li>Cleaning products</li>
+                </ul>
+
+                <div class="category-footer">
+                    <div class="category-meta">
+                        <strong>1 product</strong>
+                        <span>328 reviews</span>
+                    </div>
+                    <span class="category-link">
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </div>
+            </a>
+
+
+            <!-- BEAUTY -->
+            <a href="/products_page/index.html" class="category-card">
+                <div class="category-icon cat-beauty">
+                    <i class="fa-solid fa-spa"></i>
+                </div>
+
+                <h3>Beauty &amp; Personal Care</h3>
+
+                <p>
+                    Skincare, haircare and cosmetics — honest takes on
+                    what actually works.
+                </p>
+
+                <ul class="subcategory-list">
+                    <li>Body lotions</li>
+                    <li>Soaps</li>
+                    <li>Shampoos</li>
+                    <li>Cosmetics</li>
+                </ul>
+
+                <div class="category-footer">
+                    <div class="category-meta">
+                        <strong>2 products</strong>
+                        <span>400 reviews</span>
+                    </div>
+                    <span class="category-link">
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </div>
+            </a>
+
+
+            <!-- ELECTRONICS -->
+            <a href="/products_page/index.html" class="category-card">
+                <div class="category-icon cat-electronics">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+
+                <h3>Electronics</h3>
+
+                <p>
+                    Phones, laptops and gadgets — real-world performance
+                    from people who use them daily.
+                </p>
+
+                <ul class="subcategory-list">
+                    <li>Phones</li>
+                    <li>Laptops</li>
+                    <li>Earphones</li>
+                    <li>Accessories</li>
+                </ul>
+
+                <div class="category-footer">
+                    <div class="category-meta">
+                        <strong>2 products</strong>
+                        <span>1,264 reviews</span>
+                    </div>
+                    <span class="category-link">
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </div>
+            </a>
+
+
+            <!-- FOOD -->
+            <a href="/products_page/index.html" class="category-card">
+                <div class="category-icon cat-food">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+
+                <h3>Food &amp; Beverages</h3>
+
+                <p>
+                    Snacks, drinks and packaged foods — reviewed for
+                    taste, quality and value for money.
+                </p>
+
+                <ul class="subcategory-list">
+                    <li>Snacks</li>
+                    <li>Drinks</li>
+                    <li>Cereals</li>
+                    <li>Packaged foods</li>
+                </ul>
+
+                <div class="category-footer">
+                    <div class="category-meta">
+                        <strong>1 product</strong>
+                        <span>186 reviews</span>
+                    </div>
+                    <span class="category-link">
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </div>
+            </a>
+
+
+            <!-- FASHION -->
+            <a href="/products_page/index.html" class="category-card">
+                <div class="category-icon cat-fashion">
+                    <i class="fa-solid fa-shirt"></i>
+                </div>
+
+                <h3>Fashion</h3>
+
+                <p>
+                    Clothing, shoes and bags — fit, quality and durability
+                    from everyday buyers.
+                </p>
+
+                <ul class="subcategory-list">
+                    <li>Shoes</li>
+                    <li>Clothing</li>
+                    <li>Bags</li>
+                </ul>
+
+                <div class="category-footer">
+                    <div class="category-meta">
+                        <strong>1 product</strong>
+                        <span>142 reviews</span>
+                    </div>
+                    <span class="category-link">
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </div>
+            </a>
+
+
+            <!-- AUTOMOTIVE -->
+            <a href="/products_page/index.html" class="category-card">
+                <div class="category-icon cat-automotive">
+                    <i class="fa-solid fa-car"></i>
+                </div>
+
+                <h3>Automotive</h3>
+
+                <p>
+                    Motor oils, tyres and car accessories — trusted by
+                    drivers who actually use them.
+                </p>
+
+                <ul class="subcategory-list">
+                    <li>Motor oils</li>
+                    <li>Tyres</li>
+                    <li>Car accessories</li>
+                </ul>
+
+                <div class="category-footer">
+                    <div class="category-meta">
+                        <strong>1 product</strong>
+                        <span>97 reviews</span>
+                    </div>
+                    <span class="category-link">
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </div>
+            </a>
+
+        </div>
+
+
+        <!-- Bottom CTA -->
+        <div class="category-bottom">
+            <div class="category-bottom-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div>
+                <strong>Can't find what you're looking for?</strong>
+                <p>Search our growing collection of products and brands.</p>
+            </div>
+
+            <a href="/products_page/index.html" class="category-bottom-btn">
+                Search Products
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <a href="/index.html" class="logo" style="margin-bottom:18px; display:inline-flex;">
+                    <span class="logo-mark">H</span>
+                    <span class="logo-text" style="color:#fff;">Honest<span style="color:#166534;">Review</span></span>
+                </a>
+                <p>
+                    Real opinions. Real experiences. Better decisions.
+                    Discover honest reviews from people who have actually
+                    used the products and services they recommend.
+                </p>
+
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#">Popular Reviews</a></li>
+                    <li><a href="#">Recently Reviewed</a></li>
+                    <li><a href="/category/index.html">Categories</a></li>
+                    <li><a href="/write_review/index.html">Write a Review</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="/category/index.html">Electronics</a></li>
+                    <li><a href="/category/index.html">Fashion</a></li>
+                    <li><a href="/category/index.html">Beauty &amp; Care</a></li>
+                    <li><a href="/category/index.html">Food &amp; Restaurants</a></li>
+                    <li><a href="/category/index.html">Home &amp; Living</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>HonestReview</h3>
+                <ul>
+                    <li><a href="/about_page/index.html">About Us</a></li>
+                    <li><a href="/about_page/index.html">How It Works</a></li>
+                    <li><a href="/about_page/index.html">Community Guidelines</a></li>
+                    <li><a href="/about_page/index.html">Contact Us</a></li>
+                    <li><a href="/about_page/index.html">Help Center</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h3>Subscribe to our newsletter</h3>
+                <p>Get the latest reviews and updates delivered straight to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button class="subscribe" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 HonestReview. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>  
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script src="category.js"></script>
+
+</body>
+</html>
