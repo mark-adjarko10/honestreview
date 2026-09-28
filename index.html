@@ -122,6 +122,41 @@
 
                 </div>
 
+                <!-- ================= HERO PRODUCT CAROUSEL ================= -->
+                <div class="hero-products" aria-label="Featured products">
+
+                    <div class="hero-product-stage">
+
+                        <button type="button" class="hero-arrow hero-prev" id="heroPrev" aria-label="Previous product">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+
+                        <div class="hero-product-item" id="heroProductItem">
+                            <img
+                                id="heroProductImage"
+                                src="/images/madar.webp"
+                                alt="Madar Washing Powder"
+                            >
+
+                            <h2 id="heroProductName">Madar Washing Powder</h2>
+                        </div>
+
+                        <button type="button" class="hero-arrow hero-next" id="heroNext" aria-label="Next product">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="hero-dots" id="heroDots" aria-label="Product pagination">
+                        <button type="button" class="hero-dot active" data-index="0" aria-label="Product 1"></button>
+                        <button type="button" class="hero-dot" data-index="1" aria-label="Product 2"></button>
+                        <button type="button" class="hero-dot" data-index="2" aria-label="Product 3"></button>
+                        <button type="button" class="hero-dot" data-index="3" aria-label="Product 4"></button>
+                        <button type="button" class="hero-dot" data-index="4" aria-label="Product 5"></button>
+                    </div>
+
+                </div>
+
             </div>
 
         </section>
@@ -1391,6 +1426,76 @@
 
     </div>
 </footer>
+
+<script>
+    // Hero product carousel - image and name only
+    const heroProducts = [
+        {
+            image: "/images/madar.webp",
+            name: "Madar Washing Powder"
+        },
+        {
+            image: "/images/nivea.jpg",
+            name: "Nivea Body Lotion"
+        },
+        {
+            image: "/images/pixel 10  pro xl.jpg",
+            name: "Google Pixel 10 Pro XL"
+        },
+        {
+            image: "/images/fortune sunflower oil.jpg",
+            name: "Fortune Sunflower Oil"
+        },
+        {
+            image: "/images/vaseline lip balm.jpg",
+            name: "Vaseline Lip Balm"
+        }
+    ];
+
+    const heroImage = document.getElementById("heroProductImage");
+    const heroName = document.getElementById("heroProductName");
+    const heroDots = document.querySelectorAll(".hero-dot");
+    const heroProductItem = document.getElementById("heroProductItem");
+
+    let heroCurrentIndex = 0;
+
+    function showHeroProduct(index) {
+        heroCurrentIndex = (index + heroProducts.length) % heroProducts.length;
+        const product = heroProducts[heroCurrentIndex];
+
+        // Fade out before changing the product.
+        heroProductItem.classList.remove("active");
+
+        setTimeout(() => {
+            heroImage.src = product.image;
+            heroImage.alt = product.name;
+            heroName.textContent = product.name;
+            heroProductItem.classList.add("active");
+        }, 150);
+
+        heroDots.forEach((dot, dotIndex) => {
+            dot.classList.toggle("active", dotIndex === heroCurrentIndex);
+            dot.setAttribute(
+                "aria-current",
+                dotIndex === heroCurrentIndex ? "true" : "false"
+            );
+        });
+    }
+
+    document.getElementById("heroPrev").addEventListener("click", () => {
+        showHeroProduct(heroCurrentIndex - 1);
+    });
+
+    document.getElementById("heroNext").addEventListener("click", () => {
+        showHeroProduct(heroCurrentIndex + 1);
+    });
+
+    heroDots.forEach((dot) => {
+        dot.addEventListener("click", () => {
+            showHeroProduct(Number(dot.dataset.index));
+        });
+    });
+</script>
 
 </body>
 </html>
