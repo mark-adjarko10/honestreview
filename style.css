@@ -200,7 +200,7 @@ a {
     position: absolute;
     inset: 0;
 
-    background-image: url("../images/hero-review.jpg");
+    background-image: url("images/expertise.jpg");
 
     background-size: cover;
     background-position: center;
@@ -222,7 +222,7 @@ a {
         linear-gradient(
           to right,
             rgba(9, 36, 25, 0.92) 100%,
-            rgba(8, 22, 16, 0.12) 100%
+            rgba(62, 181, 131, 0.12) 100%
         );
 
     z-index: 1;
